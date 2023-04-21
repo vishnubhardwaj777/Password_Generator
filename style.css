@@ -60,13 +60,13 @@
 
 .display{
     width: 100%;
-    padding: 1.15rem 1rem;
+    padding: 1rem 0rem;
     background-color: transparent;
     font-weight: 600;
     font-size: 1.4rem;
     line-height: 30px;
     letter-spacing: 0.4rem;
-    padding-right: 3.25rem;
+    padding-right: 0.25rem;
     /* text-transform: uppercase; */
     justify-content: space-between;
     border: none;
