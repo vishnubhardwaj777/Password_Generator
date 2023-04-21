@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1>Password Generator</h1>
+
+            <div class="display-container">
+                <input data-passwordDisplay class="display" type="text" placeholder="Password" readonly>
+
+                <button class="copyBtn" data-copy>
+                    <span class="spantool" data-copyMsg></span>
+                    <img  id="copy-img" src="copy-svgrepo-com.svg" alt="Copy" >
+                </button>
+            </div>
+
+            <div class="input-container" >
+
+                <div class="length-container">
+                    <h3>Password Length</h3>
+                    <p data-lengthNumber>0</p>
+                </div>
+
+                <input class="slider" data-lengthSlider type="range" min="1" max="20">
+
+                <div class="check">
+                    <input type="checkbox" id="uppercase">
+                    <label for="uppercase">Include Uppercase Letter</label>
+                </div>
+
+                <div class="check">
+                    <input type="checkbox" id="lowercase">
+                    <label for="lowercase">Include Lowercase Letter</label>
+                </div>
+
+                <div class="check">
+                    <input type="checkbox" id="number">
+                    <label for="number">Include Number</label>
+                </div>
+
+                <div class="check">
+                    <input type="checkbox" id="symbol">
+                    <label for="symbol">Include Symbol</label>
+                </div>
+
+                <div class="indicator">
+                    <h3 strength-container>Strength</h3>
+                    <!-- password strength indicator -->
+                    <div data-indicator></div>
+                </div>
+
+                <button generator-button class="btn">Password Generator</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+    </style>
+
+</body>
+
+</html>

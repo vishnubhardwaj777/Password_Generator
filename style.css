@@ -1,0 +1,253 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    background: linear-gradient(90deg, rgba(3,184,191,1) 13%, rgba(9,121,107,0.9920343137254902) 41%, rgba(2,22,85,1) 88%);
+    /* background-color: #185a9d; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 90%;
+    max-width: 450px;
+}
+
+
+.container h1{
+    font-family: 'Ubuntu', sans-serif;
+    /* color: hsl(268, 75%, 9%); */
+    color: hsl(0, 0%, 100%);
+    letter-spacing: 1px;
+    opacity: 0.75;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 40px;
+}
+
+#copy-img{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    border: none;
+}
+
+.display-container button{
+    /* background-color: darkgray; */
+    background: linear-gradient(90deg, rgba(123,125,158,1) 0%, rgba(123,125,158,1) 56%, rgba(123,125,158,1) 100%);
+    border: none;
+}
+
+.display-container{
+    position: relative;
+    background: linear-gradient(90deg, rgba(144,131,101,1) 0%, rgba(146,158,156,0.9920343137254902) 56%, rgba(123,125,158,1) 100%);
+    /* background-color: darkgrey; */
+    border-radius: 1.4rem;
+    border-bottom: 0.35 solid green;
+    margin: 1rem -1px;
+    padding: 10px 16px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.display{
+    width: 100%;
+    padding: 1.15rem 1rem;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 30px;
+    letter-spacing: 0.4rem;
+    padding-right: 3.25rem;
+    /* text-transform: uppercase; */
+    justify-content: space-between;
+    border: none;
+}
+
+.display::placeholder{
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(210, 251, 6);
+    top: 20%;
+    left:0.5rem;
+    text-transform: uppercase;
+    opacity: 0.80;
+}
+
+.input-container{
+    /* background: linear-gradient(90deg, rgba(166,121,23,1) 0%, rgba(9,121,99,0.9920343137254902) 65%, rgba(2,8,85,1) 100%); */
+    background-color: hsl(268, 75%, 9%);
+    opacity: 0.75;
+    height: 26rem;
+    border-radius: 17px;
+    box-shadow: 1px 1px 5px hsl(268, 75%, 9%);
+    
+}
+
+.length-container{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Ubuntu', sans-serif;
+    padding-right: 30px;
+    padding-top: 11px;
+    padding-left: 15px;
+    line-height: 40px;
+}
+
+.length-container h3{
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px yellow;
+}
+
+.length-container p{
+    color: yellow;
+    font-weight: 600;
+    font-size:x-large;
+}
+
+.indicator{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    line-height: 24px;
+    margin-top: 23px;
+    margin-bottom: 19px;
+}
+
+.indicator div{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+.indicator h3{
+    color: white;
+    font-weight: bold;
+    font-size:x-large;
+    /* font-weight: 800; */
+    padding-left: 15px;
+    /* text-shadow: 1px 1px 3px yellow;    */
+}
+
+.check{
+    align-items: center;
+    margin: 1rem 1rem;
+}
+
+.check input{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border: 2px solid cyan;
+    position: relative;
+    border-radius: 0.35rem;
+}
+
+.check input:checked{
+    background-color: cyan;
+}
+
+.check input:checked::before{
+    content:'✔';
+    color: navy;
+    position: absolute;
+    font-size: 1.05rem;
+    font-weight: 600;
+    left: 6px;
+    top: -9px;
+    transform: translateX(-50%) translateY(40%);
+}
+
+.check label{
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+}
+
+.slider{
+    appearance: none;
+    width: 90%;
+    height: 0.75rem;
+    margin-left: 15px;
+    margin-top: 24px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: darkgray;
+}
+
+.slider::-webkit-slider-thumb{
+    appearance: none;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: yellow;
+    cursor: pointer;
+    margin-top: -3px;
+    box-shadow: 0px 0px 20px 0px rgba(255, 229, 61, 0.50);
+    transition: all 1ms ease-in;
+}
+
+.btn{
+    /* background-color: yellowgreen; */
+    position: relative;
+    margin: 7px 45px;
+    padding: 14px 23px;
+    width: 80%;
+    cursor: pointer;
+    border-radius: 11px;
+    /* text-decoration-color: aqua; */
+    font-size: larger;
+    color: whitesmoke;
+    font-weight: bold;
+    text-shadow: 0px 0px 2px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    /* background-color: #1d2671; */
+    object-fit: cover;
+    border: none;
+}
+
+.spantool {
+    position: absolute;
+    background-color: yellow;
+    color: darkgreen;
+    font-weight: bold;
+    font-size: 1.25rem;
+    top: -25px;
+    left: -29px;
+    padding: 5px 10px;
+    border-radius: 1rem;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: bottom;
+    transition: all 250ms ease-in-out;
+    /* z-index: 10;     */
+  }
+
+  
+  .spantool.active {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  #copy-img{
+    z-index: 10;
+  }
+
+  .copyBtn{
+    position: relative;
+    background-color: transparent;
+    border:none;
+    outline:none;
+    opacity: 0.9;
+}
